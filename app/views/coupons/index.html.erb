@@ -1,0 +1,6 @@
+<h1> Coupon Info </h1>
+<div>
+  <% @coupons.each do |c| %>
+    <%= link_to c.coupon_code, coupon_path(c)%> | <%= c.store %></p>
+  <% end %>
+</div>
